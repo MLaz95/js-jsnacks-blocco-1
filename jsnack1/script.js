@@ -9,9 +9,9 @@ const resultElement = document.querySelector("#result");
 
 
 if(firstWord.length == secondWord.length){
-    resultElement.innerHTML = `"${firstWord}" e "${secondWord}" hanno lo stesso numero di caratteri`
+    resultElement.innerHTML = `"${firstWord}" = "${secondWord}"`
 } else if(firstWord.length > secondWord.length){
-    resultElement.innerHTML = `"${firstWord}" è una parola piú lunga di "${secondWord}"`;
+    resultElement.innerHTML = `"${firstWord}" > "${secondWord}"`;
 } else {
-    resultElement.innerHTML = `"${secondWord}" è una parola piú lunga di "${firstWord}"`;
+    resultElement.innerHTML = `"${secondWord}" > "${firstWord}"`;
 }
