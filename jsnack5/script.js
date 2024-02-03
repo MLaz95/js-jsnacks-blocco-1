@@ -9,9 +9,12 @@ const resultElement = document.querySelector("#result");
 
 buttonElement.addEventListener('click',
     function(){
-        userValue = inputElement.value;
-        
-        
-        
+        const userInput = inputElement.value;
+        const cubes = [];
+
+        for(i = 1; i <= userInput; i++){
+            cubes.push(Math.pow(i, 3));
+        }
+        resultElement.innerHTML = `Here is the cube of each number between 1 and ${userInput} <br> ${cubes}`
     }
 )
